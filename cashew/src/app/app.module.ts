@@ -15,7 +15,7 @@ import {HttpCacheInterceptorModule} from '@ngneat/cashew';
     HttpCacheInterceptorModule.forRoot(
       {
         strategy: "explicit",
-        ttl: 60000,
+        ttl: 60000, // cache expires after 6000ms -> 60s
       }
     )
   ],
