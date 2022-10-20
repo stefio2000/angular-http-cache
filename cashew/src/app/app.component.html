@@ -1,0 +1,15 @@
+<div>
+  A simple example of caching api calls using {{title}}
+</div>
+<div>A first API call will be done immediately, a second after 15s and a third after 90s</div>
+
+<ng-container *ngIf="data.length > 0">
+
+  <div *ngFor="let record of data">
+    <ul>
+      <li>Date: {{record.date | date: 'medium'}}</li>
+      <li>Is cache: {{record.cache}}</li>
+      <li>Data: {{record.data[0] | json}}</li>
+    </ul>
+  </div>
+</ng-container>
